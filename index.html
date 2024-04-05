@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Set karakter encoding HTML -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Konfigurasi tampilan untuk perangkat seluler -->
+    <title>UTS WEB DESIGN</title> <!-- Judul halaman -->
+    <style>
+       .fContainer {
+        display: flex; /* Mengatur tampilan flex */
+        flex-direction: column; /* Mengatur arah flex menjadi kolom */
+        width: 100%; /* Mengatur lebar menjadi 100% */
+        background-color: azure; /* Mengatur warna latar belakang */
+        font-family: Arial, sans-serif; /* Mengatur jenis font untuk teks */
+       }
+       .wrapper {
+        display: flex; /* Mengatur tampilan flex */
+        justify-content: space-between; /* Mengatur penyebaran item di sekitar sumbu utama */
+        align-items: center; /* Mengatur penyebaran item di sepanjang sumbu lintang */
+        width: 100%; /* Mengatur lebar menjadi 100% */
+        font-size: 20px; /* Mengatur ukuran font */
+        padding: 1px; /* Mengatur padding */
+        background-color: black; /* Mengatur warna latar belakang */
+        box-shadow: 0 7px 15px 0 rgba(0,0,0,0.5); /* Memberikan bayangan pada box */
+       }
+       .brand{
+        display: flex; /* Mengatur tampilan flex */
+        flex-direction: row; /* Mengatur arah flex menjadi baris */
+        font-size: 1.5em; /* Mengatur ukuran font */
+        padding: 15px; /* Mengatur padding */
+        text-transform: capitalize; /* Mengatur transformasi teks menjadi huruf kapital di awal kata */
+       }
+       .firstname{
+        color:lightyellow; /* Mengatur warna teks */
+        font-weight: 700; /* Mengatur ketebalan font */
+       }
+       .lastname{
+        color: bisque; /* Mengatur warna teks */
+        font-weight: 400; /* Mengatur ketebalan font */
+        padding: 4px; /* Mengatur padding */
+       }
+       .navigation{
+        display: flex; /* Mengatur tampilan flex */
+        justify-content: center; /* Mengatur penyebaran item di sekitar sumbu utama */
+        align-items: center; /* Mengatur penyebaran item di sepanjang sumbu lintang */
+       }
+       .navigation > li{
+        list-style-type: none; /* Menghilangkan tanda bullet pada daftar */
+        padding: 15px; /* Mengatur padding */
+       }
+       .navigation>li>a{
+        color: mintcream; /* Mengatur warna teks */
+        text-decoration: none; /* Menghilangkan dekorasi link */
+       }
+       .navigation>li>a:hover{
+        color: rgb(121, 126, 124); /* Mengatur warna teks saat dihover */
+       }
+       .navigation>li>img{
+        width: 50px; /* Mengatur lebar gambar */
+        height: 50px; /* Mengatur tinggi gambar */
+        border-radius: 50px; /* Mengatur sudut bulat pada gambar */
+       }
+       .navigation>li>img:hover{
+        width: 65px; /* Mengatur lebar gambar saat dihover */
+        height: 65px; /* Mengatur tinggi gambar saat dihover */
+        border-radius: 65px; /* Mengatur sudut bulat pada gambar saat dihover */
+        transition: all .3s ease-in-out; /* Mengatur transisi untuk semua properti */
+       }
+       nav {
+            background-color: #f4f4f4; /* Mengatur warna latar belakang */
+            padding: 10px; /* Mengatur padding */
+            text-align: center; /* Mengatur penataan teks menjadi rata tengah */
+        }
+
+        nav a {
+            margin: 0 10px; /* Mengatur margin */
+            color: #333; /* Mengatur warna teks */
+            text-decoration: none; /* Menghilangkan dekorasi link */
+        }
+
+        section {
+            padding: 20px; /* Mengatur padding */
+        }
+
+        footer {
+            background-color:black; /* Mengatur warna latar belakang */
+            color: #fff; /* Mengatur warna teks */
+            padding: 10px; /* Mengatur padding */
+            text-align: center; /* Mengatur penataan teks menjadi rata tengah */
+            box-shadow: 0 7px 15px 0 rgba(0,0,0,0.5); /* Memberikan bayangan pada box */
+        }
+
+        table {
+            width: 100%; /* Mengatur lebar menjadi 100% */
+            border-collapse: collapse; /* Mengatur collapse border */
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Mengatur border */
+            padding: 8px; /* Mengatur padding */
+            text-align: left; /* Mengatur penataan teks menjadi rata kiri */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Mengatur warna latar belakang */
+            color: #333; /* Mengatur warna teks */
+        }
+
+        img {
+            display: block; /* Mengatur tampilan menjadi block */
+            margin: 0 auto; /* Mengatur margin secara otomatis */
+            max-width: 100%; /* Mengatur lebar maksimum menjadi 100% */
+            height: 500px; /* Mengatur tinggi gambar */
+        }
+    </style>
+</head>
+<body>
+    <div class="fContainer">
+        <nav class="wrapper"> <!-- Bagian navigasi -->
+            <div class="brand"> <!-- Merek atau brand -->
+                <div class="firstname">design</div> <!-- Bagian depan nama brand -->
+                <div class="lastname">web</div> <!-- Bagian belakang nama brand -->
+            </div>
+            <ul class="navigation"> <!-- Daftar navigasi -->
+                <li><a href="#home">Home</a></li> <!-- Link untuk menuju ke bagian home -->
+                <li><a href="#download-cv">Download CV</a></li> <!-- Link untuk menuju ke bagian download CV -->
+                <li><a href="#contact">Contact</a></li> <!-- Link untuk menuju ke bagian contact -->
+                <li><a href="#about">About Me</a></li> <!-- Link untuk menuju ke bagian about me -->
+                <li><img src="cat.gif" alt="..." /></li> <!-- Gambar yang merupakan link -->
+            </ul>
+        </nav>
+        <section id="home"> <!-- Bagian home -->
+            <h2>Home</h2> <!-- Judul home -->
+            <img src="photo.jpg" alt="Profile Picture"> <!-- Gambar profil -->
+            <p>Nama: AHMAD NUR ROMADHON</p> <!-- Informasi nama -->
+            <p>Gelar/Title: Software Developer</p> <!-- Informasi gelar -->
+            <p>Overview: Saya memiliki passion yang besar di bidang teknologi informasi, terutama dalam pengembangan perangkat lunak. Saya menikmati menyelesaikan masalah dan menciptakan solusi yang efisien.</p> <!-- Informasi overview -->
+            <h3>Skill dan Pengalaman Kerja</h3> <!-- Judul skill dan pengalaman kerja -->
+            <table> <!-- Tabel untuk menampilkan skill dan pengalaman kerja -->
+                <tr>
+                    <th>Skill</th> <!-- Kolom skill -->
+                    <th>Pengalaman Kerja</th> <!-- Kolom pengalaman kerja -->
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td> <!-- Data HTML/CSS -->
+                    <td>2 tahun</td> <!-- Data pengalaman kerja HTML/CSS -->
+                </tr>
+                <tr>
+                    <td>JavaScript</td> <!-- Data JavaScript -->
+                    <td>3 tahun</td> <!-- Data pengalaman kerja JavaScript -->
+                </tr>
+                <tr>
+                    <td>Python</td> <!-- Data Python -->
+                    <td>1 tahun</td> <!-- Data pengalaman kerja Python -->
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact"> <!-- Bagian contact -->
+            <h2>Contact</h2> <!-- Judul contact -->
+            <form> <!-- Form untuk mengirim pesan -->
+                <label for="email">Email:</label><br> <!-- Label untuk email -->
+                <input type="email" id="email" name="email"><br> <!-- Input email -->
+                <label for="message">Message:</label><br> <!-- Label untuk pesan -->
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br> <!-- Textarea untuk pesan -->
+                <button type="submit">Submit</button> <!-- Tombol submit -->
+            </form>
+        </section>
+
+        <section id="about"> <!-- Bagian about -->
+            <h2>About Me</h2> <!-- Judul about -->
+            <p>Saya adalah seorang mahasiswa dari Politeknik Sawunggalih Aji Kutoarjo dari kelas TI-2A, Hobby saya adalah main game dan sedikit coding, cita cita saya sementara ini yaitu membangun setup seadanya dulu, saat saya luang saya suka main valorant bersama teman-teman saya dan ini adalah channel Youtube saya...</p> <!-- Informasi tentang diri -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XfYPQvV9Q30?si=UTNWfaUQb-bdiBM5" frameborder="0"></iframe> <!-- Embedded video -->
+        </section>
+
+        <section id="download-cv"> <!-- Bagian download CV -->
+            <h2>Download CV</h2> <!-- Judul download CV -->
+            <table> <!-- Tabel untuk menampilkan informasi CV -->
+                <tr>
+                    <th>Nama</th> <!-- Kolom nama -->
+                    <th>Umur</th> <!-- Kolom umur -->
+                    <th>Alamat</th> <!-- Kolom alamat -->
+                </tr>
+                <tr>
+                    <td>AHMAD NUR ROMADHON</td> <!-- Data nama -->
+                    <td>18 tahun</td> <!-- Data umur -->
+                    <td>Purworejo, JawaTengah</td> <!-- Data alamat -->
+                </tr>
+            </table>
+            <p>Silakan unduh CV saya dalam format Excel:</p> <!-- Instruksi untuk mengunduh CV -->
+            <a href="https://docs.google.com/spreadsheets/d/1lZa1EjxHVeTJGoeGrF92BEWNiDvdwWto/edit?usp=drive_link&ouid=112906554829529734248&rtpof=true&sd=true" target="_blank">Download CV (Excel)</a> <!-- Link untuk mengunduh CV -->
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portofolio UTS Design Web</p> <!-- Informasi footer -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Set karakter encoding HTML -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Konfigurasi tampilan untuk perangkat seluler -->
+    <title>Login</title> <!-- Judul halaman -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Mengatur jenis font untuk seluruh teks dalam body */
+            background-color: #f4f4f4; /* Mengatur warna latar belakang body */
+            margin: 0; /* Menghilangkan margin */
+            padding: 0; /* Menghilangkan padding */
+        }
+        form {
+            max-width: 600px; /* Mengatur lebar maksimum form */
+            margin: 0 auto; /* Membuat form berada di tengah halaman */
+            background-color: #fff; /* Mengatur warna latar belakang form */
+            padding: 20px; /* Memberikan padding pada form */
+            border-radius: 10px; /* Mengatur sudut bulat pada form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Memberikan efek bayangan pada form */
+        }
+        fieldset {
+            border: none; /* Menghilangkan border pada fieldset */
+            padding: 0; /* Menghilangkan padding pada fieldset */
+            margin: 0; /* Menghilangkan margin pada fieldset */
+        }
+        legend {
+            font-size: 24px; /* Mengatur ukuran font untuk judul */
+            color: #333; /* Mengatur warna teks untuk judul */
+            font-weight: bold; /* Mengatur ketebalan font untuk judul */
+            margin-bottom: 20px; /* Mengatur jarak bawah untuk judul */
+        }
+        label {
+            display: block; /* Mengatur label agar tampil sebagai blok */
+            margin-bottom: 8px; /* Mengatur jarak bawah untuk label */
+            font-weight: bold; /* Mengatur ketebalan font untuk label */
+        }
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%; /* Mengatur lebar input, textarea, dan select menjadi 100% */
+            padding: 10px; /* Memberikan padding pada input, textarea, dan select */
+            margin-bottom: 15px; /* Mengatur jarak bawah untuk input, textarea, dan select */
+            border: 1px solid #ccc; /* Mengatur border untuk input, textarea, dan select */
+            border-radius: 5px; /* Mengatur sudut bulat untuk input, textarea, dan select */
+            box-sizing: border-box; /* Mengatur box-sizing untuk input, textarea, dan select */
+            font-size: 16px; /* Mengatur ukuran font untuk input, textarea, dan select */
+        }
+        input[type="radio"] {
+            margin-right: 5px; /* Mengatur jarak antara radio button */
+        }
+        input[type="file"] {
+            margin-top: 5px; /* Mengatur jarak atas untuk input file */
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #333; /* Mengatur warna latar belakang untuk tombol submit dan reset */
+            color: #fff; /* Mengatur warna teks untuk tombol submit dan reset */
+            border: none; /* Menghilangkan border pada tombol submit dan reset */
+            padding: 10px 20px; /* Mengatur padding untuk tombol submit dan reset */
+            border-radius: 5px; /* Mengatur sudut bulat pada tombol submit dan reset */
+            cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol submit dan reset */
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #555; /* Mengatur warna latar belakang saat tombol submit dan reset dihover */
+        }
+        div.a {
+	        text-align: center; /* Mengatur teks pada div dengan class 'a' menjadi rata tengah */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="a">
+            <marquee>
+                <h2>HALAMAN LOGIN</h2> <!-- Judul dengan efek marquee -->
+            </marquee>
+        </div>
+        <form action="index.html"> <!-- Form untuk login dengan aksi ke index.html -->
+            <fieldset>
+                <legend>Silahkan isi ketentuan berikut....</legend> <!-- Judul untuk fieldset -->
+                <label for="email">EMAIL</label> <!-- Label untuk input email -->
+                <input type="text" id="email" name="email" placeholder="Masukan Email"> <!-- Input email -->
+                <label for="password">PASSWORD</label> <!-- Label untuk input password -->
+                <input type="text" id="password" name="password" placeholder="Masukan Password"> <!-- Input password -->
+                <input type="submit" name="simpan" value="Simpan"> <!-- Tombol submit -->
+                <input type="reset" name="reset" value="Reset"> <!-- Tombol reset -->
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
